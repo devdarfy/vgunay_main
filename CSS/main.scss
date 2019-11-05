@@ -1,0 +1,239 @@
+$kalin: bolder;
+$arabosluk: 10px;
+$color1: #fe662c;
+$color2: #20242a;
+$title: 'Baloo Bhai', cursive;
+$footer: 'Bree Serif', serif;
+$content: 'Muli', sans-serif;
+
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Indie Flower', cursive; // Bok gibi
+
+
+@font-face {
+  font-family: "helvetica";
+  src: url("../Font/HelveticaNeueLTPro-Bd.otf");
+  src: url("../Font/HelveticaNeueLTPro-Lt.otf");
+  src: url("../Font/HelveticaNeueLTPro-Md.otf");
+  src: url("../Font/HelveticaNeueLTPro-Roman.otf");
+  src: url("../Font/HelveticaNeueLTPro-Th.otf");
+  src: url("../Font/NeueBold.otf"); 
+}
+  body {
+      background-color: #E8E8E8;
+      margin:0px;
+      padding:0px;
+}
+.header {
+  position:relative;
+  z-index: 1;
+  bottom:3px;
+}
+.profilePhoto {
+  border-radius:50%;
+  position:relative;
+
+  margin-bottom:$arabosluk;
+}
+.profileTitle {
+  font-weight: $kalin;
+  font-family:$title;
+
+  position:relative;
+  margin-bottom:$arabosluk;
+
+  font-size:28px;
+}
+.profileText {
+  position:relative;
+  font-size:23px;
+  font-family:$content;
+
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+.absolute {
+  position:absolute;
+  top:170px;
+  z-index:2;
+}
+.aboutTitle {
+  font-size:40px;
+  font-family:$title;
+
+  margin-bottom:15px;
+}
+.aboutText {
+  line-height: 30px;
+  letter-spacing: 1px;
+  color:white;
+  font-family:$content;
+  // word-break:break-all;
+
+  background-color: $color2;
+  border-radius:10px;
+
+  font-size:20px;
+  padding:25px;
+
+  // -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.66);
+  // -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.66);
+  // box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.66);
+
+  -webkit-box-shadow: 0px 9px 10px 10px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 9px 10px 10px rgba(0,0,0,0.4);
+  box-shadow: 0px 9px 10px 10px rgba(0,0,0,0.4);
+
+}
+.socialMedia {
+    margin-top:30px;
+    margin-right:25px;
+
+  img {
+    margin-left:25px;
+  }
+
+  a {
+    text-decoration: none;
+    color:none;
+  }
+}
+#subjects {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  word-break: break-all;
+
+  line-height: 20px;
+  letter-spacing: 1px;
+
+  font-family:$content;
+
+}
+#subjectTitles {
+  column-count: 3;
+  column-gap: 40px;
+  font-family:$title;
+}
+.proje {
+
+  background-color:$color2;
+  color:white;
+  border-radius:10px;
+
+  // Shadow
+  -webkit-box-shadow: 0px 9px 10px 10px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 9px 10px 10px rgba(0,0,0,0.4);
+  box-shadow: 0px 9px 10px 10px rgba(0,0,0,0.4);
+
+  .projeMainTitle{
+    font-family:$title;
+    font-size:45px;
+  }
+
+  .proje2, .proje1 {
+    padding:20px 30px 30px 30px;
+  }
+
+  img {
+    float:left;
+    margin-right:50px;
+    border-right:3px solid white;
+    padding-right: 25px;
+  }
+  
+  .projeText {
+    font-size:20px;
+    font-family:$content;
+    line-height: 20px;
+    letter-spacing: 1px;
+
+    .projeTitle {
+      font-weight: $kalin;
+      font-family:$title;
+      font-size:22px;
+      color:$color1;
+    }
+  }
+  
+
+}
+.bottom {
+    img {
+      position:relative;
+      bottom:-5px;
+    }
+}
+.footer {
+  background-color:$color2;
+  color:white;
+  font-family:$footer;
+  z-index:2;
+}
+.textfooter {
+  position:relative;
+  bottom:20px;
+  right:50px;
+  font-family:$footer;
+
+  a {
+    color:#ff8e00;
+    text-decoration:none;
+  }
+}
+//   -webkit-box-shadow: -1px -14px 10px -1px rgba(0,0,0,0.75);
+// -moz-box-shadow: -1px -14px 10px -1px rgba(0,0,0,0.75);
+// box-shadow: -1px -14px 10px -1px rgba(0,0,0,0.75);
+#fwork {
+    background-color:$color2;
+    border-radius:10px;
+    color:white;
+    position:relative;
+    z-index:999;
+    padding:25px;
+    font-weight: bolder;
+
+    letter-spacing: 1px;
+    font-family:$content;
+
+    -webkit-box-shadow: 1px 2px 10px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 10px 10px rgba(0,0,0,0.75);
+    box-shadow: 1px 2px 10px 10px rgba(0,0,0,0.75);
+
+    span:first-child {
+      font-size:25px;
+      position:relative;
+      float:left;
+      top:10px;
+      left:30px;
+    }
+
+    #fworktext {
+      text-align:center;
+      font-size:20px;
+      position:relative;
+      right:80px;
+  }
+
+    #fworkbutton {
+      border:5px solid $color1;
+      width:160px;
+      font-size:20px;
+      text-align:center;
+      border-radius:30px;
+      float:right;
+      padding:10px;
+      position:relative;
+      bottom:50px;
+      right:30px;
+      color:white;
+
+      &:hover {
+        background-color:$color1;
+      }
+  }
+}
+
+
